@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Ghana Climate Initiative</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1> 🌍Green Alliance</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Learn</a></li>
+                    <li class="has-dropdown">
+                        <a href="causes.html">Causes & Effects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="solution.html">Solutions</a></li>
+                            <li><a href="act.html">Take Action</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <!-- <li><a href="register.html">Register</a></li> -->
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="res-hero">
+            <div class="container">
+                <h2>Join the Movement</h2>
+                <p>Register to become part of Ghana's climate action community</p>
+            </div>
+        </section>
+
+        <section class="registration-form">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Create Your Account</h2>
+                    <p>Fill out the form below to register with Ghana Climate Initiative. All fields are required unless marked optional.</p>
+                    
+                    <form id="registrationForm">
+                        <div class="form-section">
+                            <h3>Personal Information</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dob">Date of Birth</label>
+                                    <input type="date" id="dob" name="dob" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                    <option value="prefer-not-to-say">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h3>Account Details</h3>
+                            <div class="form-group">
+                                <label for="username">Choose a Username</label>
+                                <input type="text" id="username" name="username" required>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" name="password" required>
+                                    <div class="password-strength">
+                                        <span class="strength-bar"></span>
+                                        <span class="strength-bar"></span>
+                                        <span class="strength-bar"></span>
+                                        <span class="strength-text">Password Strength</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmPassword">Confirm Password</label>
+                                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h3>Location Information</h3>
+                            <div class="form-group">
+                                <label for="region">Region</label>
+                                <select id="region" name="region" required>
+                                    <option value="">Select Region</option>
+                                    <option value="ahafo">Ahafo</option>
+                                    <option value="ashanti">Ashanti</option>
+                                    <option value="bono">Bono</option>
+                                    <option value="bono-east">Bono East</option>
+                                    <option value="central">Central</option>
+                                    <option value="eastern">Eastern</option>
+                                    <option value="greater-accra">Greater Accra</option>
+                                    <option value="north-east">North East</option>
+                                    <option value="northern">Northern</option>
+                                    <option value="oti">Oti</option>
+                                    <option value="savannah">Savannah</option>
+                                    <option value="upper-east">Upper East</option>
+                                    <option value="upper-west">Upper West</option>
+                                    <option value="volta">Volta</option>
+                                    <option value="western">Western</option>
+                                    <option value="western-north">Western North</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="district">District</label>
+                                <input type="text" id="district" name="district" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="community">Community/Town</label>
+                                <input type="text" id="community" name="community" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h3>Areas of Interest</h3>
+                            <p>Select the climate action areas you're interested in (select all that apply):</p>
+                            
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="interest-reforestation" name="interests" value="reforestation">
+                                    <label for="interest-reforestation">Reforestation</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="interest-renewable" name="interests" value="renewable-energy">
+                                    <label for="interest-renewable">Renewable Energy</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="interest-agriculture" name="interests" value="climate-smart-agriculture">
+                                    <label for="interest-agriculture">Climate-Smart Agriculture</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="interest-education" name="interests" value="climate-education">
+                                    <label for="interest-education">Climate Education</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="interest-policy" name="interests" value="policy-advocacy">
+                                    <label for="interest-policy">Policy Advocacy</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="interest-coastal" name="interests" value="coastal-protection">
+                                    <label for="interest-coastal">Coastal Protection</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="interest-waste" name="interests" value="waste-management">
+                                    <label for="interest-waste">Waste Management</label>
+                                </div>
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="interest-other" name="interests" value="other">
+                                    <label for="interest-other">Other (please specify)</label>
+                                    <input type="text" id="interest-other-specify" name="interest-other-specify" class="other-specify">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h3>How would you like to contribute?</h3>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="contribute-volunteer" name="contribution" value="volunteer" required>
+                                    <label for="contribute-volunteer">Volunteer</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="contribute-donate" name="contribution" value="donate">
+                                    <label for="contribute-donate">Donate</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="contribute-advocate" name="contribution" value="advocate">
+                                    <label for="contribute-advocate">Advocate</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="contribute-partner" name="contribution" value="partner">
+                                    <label for="contribute-partner">Organization/Partner</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group organization-fields" style="display: none;">
+                                <label for="organizationName">Organization Name</label>
+                                <input type="text" id="organizationName" name="organizationName">
+                            </div>
+                            
+                            <div class="form-group organization-fields" style="display: none;">
+                                <label for="organizationRole">Your Role in Organization</label>
+                                <input type="text" id="organizationRole" name="organizationRole">
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <div class="form-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                                    <label for="newsletter">Subscribe to our monthly newsletter</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="checkbox-option">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <label for="terms">I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a> and <a href="privacy.html" target="_blank">Privacy Policy</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Register Now</button>
+                            <button type="reset" class="btn btn-secondary">Reset Form</button>
+                        </div>
+                    </form>
+                    
+                    <div class="login-link">
+                        <p>Already have an account? <a href="login.html">Log in here</a></p>
+                    </div>
+                </div>
+                
+                <div class="registration-benefits">
+                    <h3>Benefits of Registering</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Access to exclusive climate action resources</li>
+                        <li><i class="fas fa-check-circle"></i> Receive updates on local climate initiatives</li>
+                        <li><i class="fas fa-check-circle"></i> Join our network of climate volunteers</li>
+                        <li><i class="fas fa-check-circle"></i> Participate in community projects</li>
+                        <li><i class="fas fa-check-circle"></i> Get invitations to workshops and events</li>
+                        <li><i class="fas fa-check-circle"></i> Contribute to Ghana's climate solutions</li>
+                    </ul>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Registering with Ghana Climate Initiative connected me with like-minded people in my community. Together we've planted over 500 trees in our district!"</p>
+                            <div class="testimonial-author">
+                                <img src="/img/caleb.jpeg" alt="caleb">
+                                <div>
+                                    <h4>Kuleke Caleb</h4>
+                                    <p>Volunteer, Accra</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ghana Climate Initiative</h3>
+                    <p>Working towards a sustainable and climate-resilient future for Ghana.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="causes-effects.html">Causes & Effects</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="action.html">Take Action</a></li>
+                        <!-- <li><a href="register.html">Register</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233 548 953 231</p>
+                    <p><i class="fas fa-envelope"></i> kulekejunior421@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Lascout-Solution. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contributionRadios = document.querySelectorAll('input[name="contribution"]');
+            const organizationFields = document.querySelectorAll('.organization-fields');
+            
+            contributionRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    if (this.value === 'partner') {
+                        organizationFields.forEach(field => field.style.display = 'block');
+                    } else {
+                        organizationFields.forEach(field => field.style.display = 'none');
+                    }
+                });
+            });
+            
+            // Password strength indicator
+            const passwordInput = document.getElementById('password');
+            const strengthBars = document.querySelectorAll('.strength-bar');
+            const strengthText = document.querySelector('.strength-text');
+            
+            if (passwordInput) {
+                passwordInput.addEventListener('input', function() {
+                    const password = this.value;
+                    let strength = 0;
+                    
+                    // Check for length
+                    if (password.length >= 8) strength++;
+                    // Check for uppercase
+                    if (/[A-Z]/.test(password)) strength++;
+                    // Check for numbers
+                    if (/[0-9]/.test(password)) strength++;
+                    // Check for special characters
+                    if (/[^A-Za-z0-9]/.test(password)) strength++;
+                    
+                    // Update strength bars
+                    strengthBars.forEach((bar, index) => {
+                        bar.style.backgroundColor = index < strength ? 
+                            (strength < 2 ? '#CE1126' : strength < 4 ? '#FCD116' : '#006B3F') : '#ddd';
+                    });
+                    
+                    // Update strength text
+                    const strengthMessages = ['Very Weak', 'Weak', 'Moderate', 'Strong', 'Very Strong'];
+                    strengthText.textContent = strengthMessages[strength];
+                });
+            }
+            
+            // Form submission
+            const registrationForm = document.getElementById('registrationForm');
+            if (registrationForm) {
+                registrationForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validate password match
+                    const password = document.getElementById('password').value;
+                    const confirmPassword = document.getElementById('confirmPassword').value;
+                    
+                    if (password !== confirmPassword) {
+                        alert('Passwords do not match!');
+                        return;
+                    }
+                    
+                    // Validate terms agreement
+                    if (!document.getElementById('terms').checked) {
+                        alert('You must agree to the terms and conditions');
+                        return;
+                    }
+                    
+                    // In a real application, you would submit the form to a server here
+                    alert('Thank you for registering with Ghana Climate Initiative! We will contact you soon.');
+                    this.reset();
+                    
+                    // Reset organization fields visibility
+                    organizationFields.forEach(field => field.style.display = 'none');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
