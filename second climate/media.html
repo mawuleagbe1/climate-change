@@ -96,6 +96,59 @@
             </div>
         </section>
     </div>
+        <section class="download-section">
+            <h2>Downloadable Resources</h2>
+            <div class="resources-container">
+                <!-- Resource Item 1 -->
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Climate Change</h3>
+                        <p>word • 2.4 MB</p>
+                        <a href="/img/Climatechange.docx" class="download-btn" download>Download</a>
+                    </div>
+                </div>
+                
+                <!-- Resource Item 2 -->
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Causes of Climate Change</h3>
+                        <p>pdf • 1.1 MB</p>
+                        <a href="/img/Causes of Climate_Change_Science_Facts.pdf" class="download-btn" download>Download</a>
+                    </div>
+                </div>
+                
+                <!-- Resource Item 3 -->
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-image"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Effect of Climate Change</h3>
+                        <p>pdf • 15.8 MB</p>
+                        <a href="/img/impacts.pdf" class="download-btn" download>Download</a>
+                    </div>
+                </div>
+                
+                <!-- Resource Item 4 -->
+                <div class="resource-item">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-video"></i>
+                    </div>
+                    <div class="resource-info">
+                        <h3>Solutions to Climate change</h3>
+                        <p>pdf • 45.2 MB</p>
+                        <a href="/img/Solution to Changing Climate .pdf" class="download-btn" download>Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
      <footer>
         <div class="container">
             <div class="footer-grid">
@@ -229,6 +282,86 @@
         @media (max-width: 480px) {
             .video-container, .image-container {
                 grid-template-columns: 1fr;
+            }
+        }
+
+        .download-section {
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .resources-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .resource-item {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            border-left: 4px solid #3498db;
+        }
+        
+        .resource-item:hover {
+            background: #e8f4fc;
+            transform: translateX(5px);
+        }
+        
+        .resource-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+            color: #3498db;
+        }
+        
+        .resource-info h3 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .resource-info p {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background: #2980b9;
+        }
+        
+        /* Responsive adjustments */
+        
+        @media (max-width: 480px) {
+            .resources-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .resource-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .resource-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
             }
         }
     </style>
